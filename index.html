@@ -9,53 +9,63 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>ec_scss</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
     <div>
         <div id="header">
             <div class="header-right">
-                <img src="./img/facebook_cover_photo_1.png" alt="">
+                <h1>CLOSET</h1>
             </div>
 
             <div class="header-left">
                 <ul class="menu">
                     <li>
-                        <a href=""><i class="fa-regular fa-heart"></i></a>
-                        "お気に入り"
+                        <a href=""><i class="fa-regular fa-heart"></i>お気に入り
+                        </a>
+
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-cart-arrow-down"></i></a>
-                        "カート"
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i>カート
+
+                        </a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-regular fa-user"></i></a>
-                        "ログイン"
+                        <a href=""><i class="fa-regular fa-user"></i>ログイン
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-grip"></i>ギャラリー
+                        </a>
                     </li>
                 </ul>
-                <div class="hunberger">
-
-                </div>
+                <div id="ham-btn" class="js-hamburger hamburger hide">
+                    <span></span>
+                  </div>
+                
             </div>
          </div>
 
-        <div id="search_in" class="search_box">
+        <!-- <div id="search_in" class="search_box">
             <form action="">
                 <input type="text" name="" id="">
                 <input type="sudmit" value="">
             </form>
 
-        </div>
+        </div> -->
 
         <div class="main_slider">
-            <ul class="slider">
-                <li class="slick"><img src="https://placehold.jp/800x500.png" alt="pic"></li>
-                <li class="slick"><img src="https://placehold.jp/800x500.png" alt="pic"></li>
-                <li class="slick"><img src="https://placehold.jp/800x500.png" alt="pic"></li>
-                <li class="slick"><img src="https://placehold.jp/800x500.png" alt="pic"></li>
-                <li class="slick"><img src="https://placehold.jp/800x500.png" alt="pic"></li>
-                <li class="slick"><img src="https://placehold.jp/800x500.png" alt="pic"></li>
-            </ul>
+            <ul class="slide-items">
+                <li><img src="./img/mainvisu1.gif" alt="main"></li>
+                <li><img src="./img/mainvisu2.jpeg" alt="main"></li>
+                <li><img src="./img/mainvisu3.gif" alt="main"></li>
+              </ul>
         </div>
 
     </div>
@@ -192,8 +202,7 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
     <script src="./script.js"></script>
 </body>
 
