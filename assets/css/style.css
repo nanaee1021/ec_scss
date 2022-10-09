@@ -106,11 +106,11 @@
   margin: 0 150px;
 }
 .movablearea ul .drop_down {
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   text-align: center;
   margin: 10px;
-  border: 1px solid #777;
+  border: 1px solid #dbdcd9;
   border-radius: 10%;
 }
 .movablearea ul .drop_down img {
@@ -120,6 +120,40 @@
 .movablearea ul .drop_down span {
   font-size: 10px;
   letter-spacing: 2px;
+}
+.movablearea ul .drop_down span p {
+  position: relative;
+}
+.movablearea ul .drop_down span p span::before {
+  background-color: #777; /* 線の色 */
+  content: "";
+  height: 1px; /* 線の太さ */
+  position: absolute;
+  right: 25px;
+  top: 50%; /* 線の位置を縦中央に */
+  transform: rotate(90deg); /* 線を縦に */
+  transition: transform 0.3s ease-in-out;
+  width: 10px; /* 線の幅 */
+  margin-top: -10px;
+  margin-right: -20px;
+}
+.movablearea ul .drop_down span p span::after {
+  background-color: #777; /* 線の色 */
+  content: "";
+  height: 1px; /* 線の太さ */
+  position: absolute;
+  right: 25px;
+  top: 50%; /* 線の位置を縦中央に */
+  transition: opacity 0.3s ease-in-out;
+  width: 10px; /* 線の幅 */
+  margin-top: -10px;
+  margin-right: -20px;
+}
+.movablearea ul .drop_down span p span.open::before {
+  transform: rotate(180deg);
+}
+.movablearea ul .drop_down span p span.open::after {
+  opacity: 0;
 }
 .movablearea ul .drop_down div {
   position: relative;
@@ -145,10 +179,10 @@
   color: gray;
 }
 .movablearea ul .nomal {
-  border: 1px solid #777;
+  border: 1px solid #dbdcd9;
   border-radius: 10%;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   text-align: center;
   margin: 10px;
 }
