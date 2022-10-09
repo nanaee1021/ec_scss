@@ -17,3 +17,111 @@ $('#ham-btn').on('click', function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// あやのjsはここから
+// ドロップダウン
+$(function() {
+    $("ul li").hover(
+      function() {
+        $("ul:not(:animated)", this).slideDown();
+      },
+      function() {
+        $("ul", this).slideUp();
+      }
+    );
+    // マウスが重なったらホバー
+    $('.icon').on('mouseover',function () {
+        $(this).css('opacity',0.5);
+    }).on('mouseleave',function(){
+        $(this).css('opacity',1);
+    })
+    $('.nomal').on('mouseover',function () {
+        $(this).css('opacity',0.5);
+    }).on('mouseleave',function(){
+        $(this).css('opacity',1);
+    })
+    $('.ctg').on('mouseover',function () {
+        $(this).css('opacity',0.5);
+    }).on('mouseleave',function(){
+        $(this).css('opacity',1);
+    })
+  });

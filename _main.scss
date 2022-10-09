@@ -10,28 +10,73 @@
 
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin: 0 150px;
+
+        .drop_down {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            margin: 10px;
+            border: 1px solid #777;
+            border-radius: 10%;
+
+            img {
+                width: 65px;
+                height: auto;
+            }
+
+            span {
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+
+            div {
+                position: relative;
+
+                ul {
+                    position: absolute;
+                    margin-left: -6px;
+                    display: none;
+
+                    li a {
+                        padding: 5px;
+                        margin-left: -5px;
+                        margin-right: -5px;
+                        margin-bottom: -5px;
+                        display: block;
+                        color: #777;
+                        text-decoration: none;
+                        font-size: 10px;
+                        margin-top: 5px;
+                        margin-left: 25px;
+                    }
+
+                    li a:hover {
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        .nomal {
+            border: 1px solid #777;
+            border-radius: 10%;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            margin: 10px;
+
+            img {
+                width: 65px;
+                height: auto;
+            }
+
+            span {
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+        }
     }
 
-}
-
-#rightContentMain {
-    float: left;
-    width: 850px;
-}
-
-h2 {
-    img {
-        margin: 100px 50px;
-    }
-}
-
-div.scrollable {
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-    .new_arrivalList {
-        display: flex !important;
-        width: 1840px;
-    }
 }
