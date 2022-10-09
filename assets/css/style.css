@@ -106,6 +106,7 @@
   margin: 0 150px;
 }
 .movablearea ul .drop_down {
+  position: relative;
   height: 110px;
   width: 110px;
   text-align: center;
@@ -125,35 +126,38 @@
   position: relative;
 }
 .movablearea ul .drop_down span p span::before {
-  background-color: #777; /* 線の色 */
+  background-color: #777;
+  /* 線の色 */
   content: "";
-  height: 1px; /* 線の太さ */
+  height: 1px;
+  /* 線の太さ */
   position: absolute;
   right: 25px;
-  top: 50%; /* 線の位置を縦中央に */
-  transform: rotate(90deg); /* 線を縦に */
+  top: 50%;
+  /* 線の位置を縦中央に */
+  transform: rotate(90deg);
+  /* 線を縦に */
   transition: transform 0.3s ease-in-out;
-  width: 10px; /* 線の幅 */
+  width: 10px;
+  /* 線の幅 */
   margin-top: -10px;
-  margin-right: -20px;
+  margin-right: -22px;
 }
 .movablearea ul .drop_down span p span::after {
-  background-color: #777; /* 線の色 */
+  background-color: #777;
+  /* 線の色 */
   content: "";
-  height: 1px; /* 線の太さ */
+  height: 1px;
+  /* 線の太さ */
   position: absolute;
   right: 25px;
-  top: 50%; /* 線の位置を縦中央に */
+  top: 50%;
+  /* 線の位置を縦中央に */
   transition: opacity 0.3s ease-in-out;
-  width: 10px; /* 線の幅 */
+  width: 10px;
+  /* 線の幅 */
   margin-top: -10px;
-  margin-right: -20px;
-}
-.movablearea ul .drop_down span p span.open::before {
-  transform: rotate(180deg);
-}
-.movablearea ul .drop_down span p span.open::after {
-  opacity: 0;
+  margin-right: -22px;
 }
 .movablearea ul .drop_down div {
   position: relative;
@@ -162,6 +166,8 @@
   position: absolute;
   margin-left: -6px;
   display: none;
+  margin-top: 9px;
+  margin-left: 10px;
 }
 .movablearea ul .drop_down div ul li a {
   padding: 5px;
@@ -173,12 +179,14 @@
   text-decoration: none;
   font-size: 10px;
   margin-top: 5px;
-  margin-left: 25px;
+  margin-left: 20px;
+  text-align: center;
 }
 .movablearea ul .drop_down div ul li a:hover {
   color: gray;
 }
 .movablearea ul .nomal {
+  position: relative;
   border: 1px solid #dbdcd9;
   border-radius: 10%;
   height: 110px;
@@ -193,4 +201,18 @@
 .movablearea ul .nomal span {
   font-size: 10px;
   letter-spacing: 2px;
+}
+.movablearea ul .nomal span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: calc(50% - 3px);
+  border-left: 1px solid #777;
+  border-top: 1px solid #777;
+  width: 5px;
+  height: 5px;
+  transform: rotate(135deg);
+  margin-top: 37px;
+  margin-right: -3px;
 }/*# sourceMappingURL=style.css.map */
