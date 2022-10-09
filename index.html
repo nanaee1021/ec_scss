@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>ec_scss</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
@@ -38,7 +39,7 @@
                     <li>
                         <a href=""><i class="fa-regular fa-user"></i>ログイン
                         </a>
-                        
+
                     </li>
                     <li>
                         <a href=""><i class="fa-solid fa-grip"></i>ギャラリー
@@ -47,10 +48,10 @@
                 </ul>
                 <div id="ham-btn" class="js-hamburger hamburger hide">
                     <span></span>
-                  </div>
-                
+                </div>
+
             </div>
-         </div>
+        </div>
 
         <!-- <div id="search_in" class="search_box">
             <form action="">
@@ -65,7 +66,7 @@
                 <li><img src="./img/mainvisu1.gif" alt="main"></li>
                 <li><img src="./img/mainvisu2.jpeg" alt="main"></li>
                 <li><img src="./img/mainvisu3.gif" alt="main"></li>
-              </ul>
+            </ul>
         </div>
 
     </div>
@@ -89,15 +90,17 @@
 
 
     <!-- aya -->
+    <!-- category -->
     <div class="movablearea">
         <div class="brand-free">
-            <div class="area_title ttl_category">CATEGORY</div>
+            <div class=" ttl_categarea_titleory">CATEGORY</div>
             <ul>
                 <!-- パンツ -->
                 <li class='drop_down'>
                     <a class="icon">
-                        <div></div>
+                        <div><img src="https://placehold.jp/100x100.png" alt=""></div>
                         <span>
+                            BOTTOMS
                             <p>
                                 <!-- プラスの縦線 -->
                                 <span></span>
@@ -181,28 +184,186 @@
             </ul>
         </div>
     </div>
-    <div id="newarrivelItem">
-        <section id="idxnew_aarivelItem" class="section">
-            <div id="new_arriveHeager" class="clearfix lined sectionHeader">
-                <!-- arriveのロゴ入れる -->
-                <h2>
-                    <img src="" alt="">
-                </h2>
-            </div>
-            <div style="opacity: 1;" id="new_arrivalItem">
-                <div class="scrollable">
-                    <ul class="new_arrivalList clearfix" style="width: 1840px;">
-                    <li class="newarrival1">
-                        <div></div>
-                    </li>
-                </ul>
+    <!-- 新着アイテム -->
+    <div id="rightContentMain">
+        <div id="newarrivelItem">
+            <section id="idxnew_aarivelItem" class="section">
+                <div id="new_arriveHeager" class="clearfix lined sectionHeader">
+                    <!-- arriveのロゴ入れる -->
+                    <h2>
+                        <img src="./img/newarrivelogo-2.png" alt="">
+                    </h2>
                 </div>
-            </div>
-        </section>
+                <div style="opacity: 1;" id="new_arrivalItem">
+                    <div class="scrollable">
+                        <ul class="new_arrivalList clearfix" style="width: 1840px;">
+                            <li class="newarrival1">
+                                <div class="listInner clearfix">
+                                    <p class="newarrival clearfix"></p>
+                                    <!-- リンクに飛ぶ -->
+                                    <a href="">
+                                        <!-- ストール写真１ -->
+                                        <p class="photp">
+                                            <img src="./img/newarrive1.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico new">NEW</span>
+                                            <span class="new_ico washable">手洗い可</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>ボーダーBIGストール</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥5,720</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="newarrival1">
+                                <div class="listInner clearfix">
+                                    <p class="newarrival clearfix"></p>
+                                    <a href="">
+                                        <!-- ストール２ -->
+                                        <p class="photp">
+                                            <img src="./img/newarrive2.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico new">NEW</span>
+                                            <span class="new_ico washable">手洗い可</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>MIX BIGストール</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥5,720</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="newarrival1">
+                                <div class="listInner clearfix">
+                                    <p class="newarrival clearfix"></p>
+                                    <a href="">
+                                        <!-- パンツ -->
+                                        <p class="photp">
+                                            <img src="./img/newarrive3.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico new">NEW</span>
+                                            <span class="new_ico reservation">予約</span>
+                                            <span class="new_ico washable">手洗い可</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>[mline] シンプルショートパンツ</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥6,600</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="newarrival1">
+                                <div class="listInner clearfix">
+                                    <p class="newarrival clearfix"></p>
+                                    <a href="">
+                                        <!-- ベストニット -->
+                                        <p class="photp">
+                                            <img src="./img/newarrive4.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico new">NEW</span>
+                                            <span class="new_ico reservation">予約</span>
+                                            <span class="new_ico washable">手洗い可</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>[mline] ケーブル2WAYベストニット</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥8,250</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="newarrival1">
+                                <div class="listInner clearfix">
+                                    <p class="newarrival clearfix"></p>
+                                    <a href="">
+                                        <!-- ニットオールインワン -->
+                                        <p class="photp">
+                                            <img src="./img/newarrive5.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico new">NEW</span>
+                                            <span class="new_ico reservation">予約</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>ニットオールインワン</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥11,550</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="newarrival1">
+                                <div class="listInner clearfix">
+                                    <p class="newarrival clearfix"></p>
+                                    <a href="">
+                                        <!-- ニットリブパンツ -->
+                                        <p class="photp">
+                                            <img src="./img/newarrive6.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico new">NEW</span>
+                                            <span class="new_ico washable">手洗い可</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>ニットリブパンツ</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥7,150
+                                            </span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="newarrival1">
+                                <div class="listInner clearfix">
+                                    <p class="newarrival clearfix"></p>
+                                    <a href="">
+                                        <!-- ジャガードクルーvニット -->
+                                        <p class="photp">
+                                            <img src="./img/newarrive7.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico reservation">予約</span>
+                                            <span class="new_ico movie">動画</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>ジャガードクルーVニット</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥9,900</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- すべて見る　リンク貼る -->
+                <h3>
+                    <a class="more-link" href=""></a>
+                </h3>
+                <a class="scroll-left" style="opacity: 0; display: block;"></a>
+                <a href="scroll-right" style="display: block;"></a>
+            </section>
+        </div>
     </div>
 
 
-    
+
     <script src="./script.js"></script>
 </body>
 

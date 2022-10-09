@@ -1,0 +1,37 @@
+.movablearea {
+    padding: 50px 0;
+
+    .ttl_categarea_titleory {
+        margin-bottom: 80px;
+        font-size: 30px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+#rightContentMain {
+    float: left;
+    width: 850px;
+}
+
+h2 {
+    img {
+        margin: 100px 50px;
+    }
+}
+
+div.scrollable {
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .new_arrivalList {
+        display: flex !important;
+        width: 1840px;
+    }
+}
