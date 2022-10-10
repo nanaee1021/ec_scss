@@ -148,33 +148,36 @@
 
 // 新着アイテム
 .clearfix {
+   position: relative;
     h2 {
         font-size: 30px;
         padding: 0 30px;
         margin-bottom: 10px;
         margin-top: 80px;
     }
-
     #new_arrivalItem {
         padding: 0 30px;
         box-sizing: border-box;
-        width: 100%;
+        width: 94%;
+        margin: 0 auto;
+        
 
         .scrollable {
             overflow-x: scroll;
             overflow-y: hidden;
+            
 
             .new_arrivalList {
-                display: flex !important;
-                width: 1840px;
-                margin: 20px 0 !important;
-                box-sizing: border-box !important;
+                display: flex ;
+                width: 1365px;
+                margin: 20px 0 ;
+                box-sizing: border-box ;
             }
 
             .clearfix {
                 zoom: 1;
 
-                .newarrival1 {
+                .newarrival1  {
                     float: left;
                     width: 195px;
                     height: 300px;
@@ -182,6 +185,7 @@
                     .listInner {
                         text-align: center;
                         font-size: 11px;
+
 
                         a {
                             .photo {
@@ -225,9 +229,6 @@
         }
 
     }
-
-}
-.clearfix{
     .scroll-left{
         top: 173px;
         left: 0;
@@ -240,17 +241,13 @@
         background-color: white;
         display: block;
         transition: .3s;
+        margin-left: 65px;
     }
-    a{
-        outline: none;
-        color: #222;
-        text-decoration: none;
-    }
-    a.scroll-left::before{
+    .scroll-left::before{
         width: 6px;
         height: 6px;
-        border-top: 1px solid #575757;
-        border-left: 1px solid #575757;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -258,4 +255,30 @@
         content: '';
         display: block;
     }
+    .scroll-right{
+        top: 173px;
+        right: 0;
+        transform: translateX(5px);
+        position: absolute;
+        border: 1px solid #dadada;
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        background-color: white;
+        transition: .3s;
+        margin-right: 65px;
+    }
+    .scroll-right::before{
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #575757;
+        border-right: 1px solid #575757;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(45deg)translate(-5px,0px);
+        content: '';
+        display: block;
+    }
+
 }
