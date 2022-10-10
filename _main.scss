@@ -150,13 +150,13 @@
 .clearfix {
     h2 {
         font-size: 30px;
-        padding: 0 10px;
+        padding: 0 30px;
         margin-bottom: 10px;
         margin-top: 80px;
     }
 
     #new_arrivalItem {
-        padding: 0 10px;
+        padding: 0 30px;
         box-sizing: border-box;
         width: 100%;
 
@@ -192,21 +192,26 @@
 
                             .ico-box {
                                 text-align: left;
+
                                 .new {
                                     color: red;
                                 }
-                                .reservation{
+
+                                .reservation {
                                     color: skyblue;
                                 }
-                                .restock{
+
+                                .restock {
                                     color: orange;
                                 }
                             }
-                            .textOverflow{
+
+                            .textOverflow {
                                 box-sizing: border-box;
                                 text-align: left;
                             }
-                            .price{
+
+                            .price {
                                 line-height: 1.1;
                                 margin: 0;
                                 text-align: left;
@@ -215,17 +220,42 @@
                         }
 
                     }
-
-                    .clearfix::after {
-                        content: '';
-                        display: block;
-                        height: 0;
-                        clear: both;
-                        visibility: hidden;
-                    }
                 }
             }
-            
         }
+
+    }
+
+}
+.clearfix{
+    .scroll-left{
+        top: 173px;
+        left: 0;
+        transform: translateX(-5px);
+        position: absolute;
+        border: 1px solid #dadada;
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        background-color: white;
+        display: block;
+        transition: .3s;
+    }
+    a{
+        outline: none;
+        color: #222;
+        text-decoration: none;
+    }
+    a.scroll-left::before{
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #575757;
+        border-left: 1px solid #575757;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(-45deg)translate(1px,-3px);
+        content: '';
+        display: block;
     }
 }

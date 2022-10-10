@@ -220,12 +220,12 @@
 
 .clearfix h2 {
   font-size: 30px;
-  padding: 0 10px;
+  padding: 0 30px;
   margin-bottom: 10px;
   margin-top: 80px;
 }
 .clearfix #new_arrivalItem {
-  padding: 0 10px;
+  padding: 0 30px;
   box-sizing: border-box;
   width: 100%;
 }
@@ -276,10 +276,34 @@
   text-align: left;
   float: left;
 }
-.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .clearfix::after {
+
+.clearfix .scroll-left {
+  top: 173px;
+  left: 0;
+  transform: translateX(-5px);
+  position: absolute;
+  border: 1px solid #dadada;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  background-color: white;
+  display: block;
+  transition: 0.3s;
+}
+.clearfix a {
+  outline: none;
+  color: #222;
+  text-decoration: none;
+}
+.clearfix a.scroll-left::before {
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #575757;
+  border-left: 1px solid #575757;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-45deg) translate(1px, -3px);
   content: "";
   display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
 }/*# sourceMappingURL=style.css.map */
