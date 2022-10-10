@@ -92,10 +92,11 @@
 }
 
 .movablearea {
-  padding: 50px 0;
+  padding: 10px;
 }
 .movablearea .ttl_categarea_titleory {
-  margin-bottom: 80px;
+  margin-bottom: 10px;
+  margin-top: 100px;
   font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
@@ -215,4 +216,70 @@
   transform: rotate(135deg);
   margin-top: 37px;
   margin-right: -3px;
+}
+
+.clearfix h2 {
+  font-size: 30px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+.clearfix #new_arrivalItem {
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.clearfix #new_arrivalItem .scrollable {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.clearfix #new_arrivalItem .scrollable .new_arrivalList {
+  display: flex !important;
+  width: 1840px;
+  margin: 20px 0 !important;
+  box-sizing: border-box !important;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix {
+  zoom: 1;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 {
+  float: left;
+  width: 195px;
+  height: 300px;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner {
+  text-align: center;
+  font-size: 11px;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .photo img {
+  max-width: 100%;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .ico-box {
+  text-align: left;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .ico-box .new {
+  color: red;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .ico-box .reservation {
+  color: skyblue;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .ico-box .restock {
+  color: orange;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .textOverflow {
+  box-sizing: border-box;
+  text-align: left;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .price {
+  line-height: 1.1;
+  margin: 0;
+  text-align: left;
+  float: left;
+}
+.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }/*# sourceMappingURL=style.css.map */
