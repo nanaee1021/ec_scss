@@ -330,4 +330,7 @@
   transform: rotate(45deg) translate(-5px, 0px);
   content: "";
   display: block;
+}
+.clearfix .news .tab {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
