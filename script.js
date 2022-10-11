@@ -130,4 +130,5 @@ $(function () {
   }).on('mouseleave', function () {
     $(this).css('opacity', 1);
   })
+  
 });

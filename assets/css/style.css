@@ -330,4 +330,23 @@
   transform: rotate(45deg) translate(-5px, 0px);
   content: "";
   display: block;
+}
+.clearfix .news .tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clearfix .news .tab .on .non-scroll {
+  padding: 10px 20px;
+  margin: 0 2px;
+}
+.clearfix .news .tab .on.active.non-scroll {
+  background: #fff;
+}
+.clearfix .news .contact {
+  opacity: 0;
+  background: #fff;
+  padding: 50px 20px;
+}
+.clearfix .news .contact .box {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
