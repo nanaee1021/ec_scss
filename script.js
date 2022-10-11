@@ -140,4 +140,14 @@ $(function () {
   }).on('mouseleave', function () {
     $(this).css('opacity', 1);
   })
+  $('.footer-main p').on('mouseover', function () {
+    $(this).css('opacity', 0.5);
+  }).on('mouseleave', function () {
+    $(this).css('opacity', 1);
+  })
+  $('.footer-right p').on('mouseover', function () {
+    $(this).css('opacity', 0.5);
+  }).on('mouseleave', function () {
+    $(this).css('opacity', 1);
+  })
 });
