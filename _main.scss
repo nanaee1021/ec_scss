@@ -188,8 +188,8 @@
                         text-align: center;
                         font-size: 11px;
 
-
                         a {
+
                             .photo {
                                 img {
                                     max-width: 100%;
@@ -290,31 +290,6 @@
     }
 
     // ニュース部分
-    .news {
-        .tab {
-            display: flex;
-            flex-wrap: wrap;
-
-            .on .non-scroll {
-                padding: 10px 20px;
-                margin: 0 2px;
-            }
-
-            .on.active.non-scroll {
-                background: #fff;
-            }
-        }
-
-        .contact {
-            opacity: 0;
-            background: #fff;
-            padding: 50px 20px;
-
-            .box {
-                display: flex;
-            }
-        }
-
-    }
+    
 
 }
