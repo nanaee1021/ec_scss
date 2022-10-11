@@ -92,7 +92,8 @@
 }
 
 No newline at end of file .tab_box {
-  margin: 100px auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .tab_box .btn_area {
