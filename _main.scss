@@ -148,36 +148,38 @@
 
 // 新着アイテム
 .clearfix {
-   position: relative;
+    position: relative;
+
     h2 {
         font-size: 30px;
         padding: 0 30px;
         margin-bottom: 10px;
         margin-top: 80px;
     }
+
     #new_arrivalItem {
         padding: 0 30px;
         box-sizing: border-box;
         width: 94%;
         margin: 0 auto;
-        
+
 
         .scrollable {
             overflow-x: scroll;
             overflow-y: hidden;
-            
+
 
             .new_arrivalList {
-                display: flex ;
+                display: flex;
                 width: 1365px;
-                margin: 20px 0 ;
-                box-sizing: border-box ;
+                margin: 20px 0;
+                box-sizing: border-box;
             }
 
             .clearfix {
                 zoom: 1;
 
-                .newarrival1  {
+                .newarrival1 {
                     float: left;
                     width: 195px;
                     height: 300px;
@@ -226,10 +228,13 @@
                     }
                 }
             }
+
         }
 
+
     }
-    .scroll-left{
+
+    .scroll-left {
         top: 173px;
         left: 0;
         transform: translateX(-5px);
@@ -243,7 +248,8 @@
         transition: .3s;
         margin-left: 65px;
     }
-    .scroll-left::before{
+
+    .scroll-left::before {
         width: 6px;
         height: 6px;
         border-top: 1px solid black;
@@ -251,11 +257,12 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: rotate(-45deg)translate(1px,-3px);
+        transform: rotate(-45deg)translate(1px, -3px);
         content: '';
         display: block;
     }
-    .scroll-right{
+
+    .scroll-right {
         top: 173px;
         right: 0;
         transform: translateX(5px);
@@ -268,7 +275,8 @@
         transition: .3s;
         margin-right: 65px;
     }
-    .scroll-right::before{
+
+    .scroll-right::before {
         width: 6px;
         height: 6px;
         border-top: 1px solid #575757;
@@ -276,9 +284,11 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: rotate(45deg)translate(-5px,0px);
+        transform: rotate(45deg)translate(-5px, 0px);
         content: '';
         display: block;
     }
 
+    // ニュース部分
+  
 }
